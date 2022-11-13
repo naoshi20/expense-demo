@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'appName.apps.appNameConfig',
     'bootstrap4',
     'widget_tweaks',
+    'django_tables2'
 ]
 #'accounts.apps.AccountsConfig',
 
@@ -73,6 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                "django.template.context_processors.request",
             ],
             'builtins': [
                 'bootstrap4.templatetags.bootstrap4',

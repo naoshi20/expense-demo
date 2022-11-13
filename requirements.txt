@@ -12,3 +12,5 @@ sqlparse
 typing_extensions
 whitenoise
 pillow
+django-tables2
+tablib
