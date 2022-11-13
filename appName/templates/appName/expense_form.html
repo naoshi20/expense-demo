@@ -1,0 +1,23 @@
+{% extends 'appName/base.html' %}
+
+{% block content %}
+<div class="container">
+        <h1>経費登録</h1>
+        <div class="row">
+                <form action="" method="POST">
+                        <div class="form-group">
+                                <label for="formGroupExampleInput1">タイトル</label>
+                                {{ form.title }}
+                                <label for="formGroupExampleInput2">種別</label>
+                                {{ form.cost_indexes }}
+                                <label for="formGroupExampleInput3">金額</label>
+                                {{ form.amount_of_money }}
+                                <label for="formGroupExampleInput4">備考</label>
+                                {{ form.remarks }}
+                        </div>
+                        <button type="submit" class="btn btn-primary">送信</button>
+                        {% csrf_token %}
+                </form>
+        </div>
+</div>
+{% endblock %}
