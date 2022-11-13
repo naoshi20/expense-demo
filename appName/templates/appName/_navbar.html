@@ -1,5 +1,14 @@
 {% load static %}
-<div class="navbar">
-  <a href="{% url 'index' %}">ホーム</a>
-  <a href="{% url 'about' %}">アバウト</a>
+<div class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{% url 'appName:index' %}">経費精算デモ</a>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'appName:index' %}">登録 <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">一覧</a>
+      </li>
+    </ul>
+  </div>
 </div>
